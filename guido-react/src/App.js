@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import pic from './pic.jpg';
 
 function App() {
   return (
@@ -12,6 +13,8 @@ function App() {
         <button>
           Hoi
           </button>
+
+  <img src={pic} alt="pic" />
           <p> 
             Tekst na de knop
           </p>
