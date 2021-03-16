@@ -56,7 +56,7 @@ function App() {
         </p>
 
         <p style={{fontSize: '200%'}}>
-          Nieuwe letters
+          Nieuwe letters update
         </p>
 
         <div>
