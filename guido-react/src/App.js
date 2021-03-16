@@ -14,7 +14,7 @@ function App() {
           Hoi
           </button>
 
-  <img src={pic} alt="pic" />
+  <img src={pic} className="photoSmall" alt="pic" />
           <p> 
             Tekst na de knop
           </p>
