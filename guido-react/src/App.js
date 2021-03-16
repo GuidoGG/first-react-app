@@ -9,6 +9,12 @@ function App() {
         <p>
           Guido's eerste poging met Github
         </p>
+        <button>
+          Hoi
+          </button>
+          <p> 
+            Tekst na de knop
+          </p>
         <a
           className="App-link"
           href="https://reactjs.org"
