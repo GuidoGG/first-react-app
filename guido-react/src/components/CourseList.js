@@ -1,4 +1,6 @@
 import React from "react";
+import PropTypes from "prop-types";
+
 
 function CourseList(props){
     return (
@@ -11,9 +13,14 @@ function CourseList(props){
             </tr>
         </thead>
         <tbody>
+            
         </tbody>
     </table>
     )
+}
+
+CourseList.propTypes = {
+
 }
 
 export default CourseList;
