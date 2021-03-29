@@ -2,6 +2,7 @@ import React from "react";
 import {Link} from "react-router-dom";
 import styled  from "styled-components";
 import './guido.css';
+import logo from "./Pictures/logo192.png";
 
 const Container = styled.section`
 color:red;
@@ -22,8 +23,8 @@ margin: 2em;
 const guidoStyle = {
   color: "white",
   background: "blue",
-  padding: '5rem 5rem',
-  borderRadius: "10px"
+  padding: '1rem 1rem',
+  borderRadius: "1px"
 }
 
 function HomePage() {
@@ -32,8 +33,8 @@ function HomePage() {
 
 
     <div className="jumbotron">
-      <h1>Pluralsight Administration</h1>
-      <p>React, Flux, and React Router for ultra-responsive web apps.</p>
+      <h1>Guido's First React App</h1>
+      <p>Creating a website and adding components</p>
       <Link to="about" className="btn btn-primary">About</Link>
       <h1 style={{color:"red"}}>
      <p>
@@ -41,6 +42,10 @@ function HomePage() {
      </p>
         Hallo rode tekst
       </h1>
+      <img src={logo} alt="guido"/>
+      <img src={logo} alt="guido"/>
+      <img src={logo} alt="guido"/>
+      <div></div>
       <button style={guidoStyle}>Klik op mij</button>
       <p className="es-guido">hallo</p>
     </div>

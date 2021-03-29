@@ -1,9 +1,9 @@
 .es-guido {
   position: right;
   text-align: center;
-  max-width: 100%;
-  padding: 3em;
-  background: red;
+  max-width: 10%;
+  padding: 1em;
+  background: white;
   outline-width: 2px;
   outline-color: blue;
 }
