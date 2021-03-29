@@ -1,21 +1,18 @@
 import React from "react";
+import TextInput from "./common/TextInput";
+import PropTypes from "prop-types";
 
 function CourseForm(props){
     return(
-        <form>
-            <div className="form-group">
-                <label htmlFor="title">Title</label>
-            <div className="field"> 
-            <input 
+    <form onSubmit={props.onSubmit}>
+      <TextInput
             id="title"
-            type="text"
-            onChange={props.onTitleChange}
+            label="Title"
+            onChange={props.onChange}
             name="title"
-            className="form-control"
             value={props.course.title}
-            />
-            </div>
-            </div>
+            error={props.errors.title}
+    />
 
 <div className="form-group">
     <label htmlFor="author">Author</label>
@@ -32,23 +29,31 @@ function CourseForm(props){
             <option value="2">Scott Allen</option>
         </select>
     </div>
+    {props.errors.authorId && (
+        <div className="alert alert-danger">{props.errors.authorId}</div>
+    )}
 </div>
 
-<div className="form-group">
-    <label htmlFor="category">Category</label>
-    <div className="field">
-        <input
-        type="text"
+  
+  <TextInput
         id="category"
-        name="Category"
-        className="form-control"
+        label="Category"
+        name="category"
+        onChange={props.onChange}
         value={props.course.category}
+        error={props.errors.category}
         />
-    </div>
-</div>
-<input type="submit" value="Save" className="btn btn-primary" />
+
+    <input type="submit" value="Save" className="btn btn-primary" />
         </form>
     );
 }
+
+CourseForm.propTypes = {
+    course: PropTypes.object.isRequired,
+    onSubmit: PropTypes.func.isRequired,
+    onChange: PropTypes.func.isRequired,
+    errors: PropTypes.object.isRequired
+};
 
 export default CourseForm;
