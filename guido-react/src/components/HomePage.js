@@ -1,7 +1,8 @@
-import React from "react";
+import React, {useState} from "react";
 import {Link} from "react-router-dom";
 import styled  from "styled-components";
 import './guido.css';
+import InputElement from "./Input";
 import logo from "./Pictures/logo192.png";
 
 const Container = styled.section`
@@ -30,9 +31,7 @@ const guidoStyle = {
 function HomePage() {
   return (
     <Container>
-
-
-    <div className="jumbotron">
+      <div className="jumbotron">
       <h1>Guido's First React App</h1>
       <p>Creating a website and adding components</p>
       <Link to="about" className="btn btn-primary">About</Link>
@@ -40,6 +39,7 @@ function HomePage() {
      <p>
 
      </p>
+     <InputElement className="es-guido"/>
         Hallo rode tekst
       </h1>
       <img src={logo} alt="guido"/>
