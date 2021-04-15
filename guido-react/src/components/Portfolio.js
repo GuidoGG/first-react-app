@@ -1,11 +1,18 @@
-import React from "react"
+import React from "react";
 import ShowPicture from "./ShowPicture";
 import Logo from "./Pictures/Picborrel.png";
 import "./guido.css";
+import ToggleBox from "./ToggleBox";
+
 
 function Portfolio(){
     return (
         <div>
+            <ToggleBox title="Show Vehicles">
+				<ShowPicture>
+                <img className="photo" src={Logo} alt="Logo"></img>
+                </ShowPicture>
+			</ToggleBox>
         <div>
         <h1>
             Dit is mijn portfolio.
@@ -26,8 +33,7 @@ function Portfolio(){
         <button>Show image</button>
         <br>
         </br>
-        
-        <img className="photo" src={Logo} alt="Logo"></img>
+    
 
         </div>
     )

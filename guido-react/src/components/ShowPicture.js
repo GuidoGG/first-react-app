@@ -1,9 +1,17 @@
-import React from "react";
+import React, { Component } from "react";
+import Logo from "./Pictures/Picborrel.png";
 
-function ShowPicture(){
-    return(
-        <img src="./Pictures.logo192.png" alt=""></img>
-    )
+class ShowPicture extends Component {	 
+	render() {
+		return (
+			<div> 
+				hello
+                <div>
+                <img className="photo" src={Logo} alt="Logo"></img>
+                 </div>
+			 </div>
+		);
+	}
 }
 
 export default ShowPicture;
