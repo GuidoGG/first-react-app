@@ -15,9 +15,12 @@ return (
         <NavLink activeStyle={activeStyle} to="/about">
             About
             </NavLink> {" | "}
-            <NavLink activeStyle={activeStyle} to="/hookspage">
+         <NavLink activeStyle={activeStyle} to="/hookspage">
                 Hooks
-                </NavLink>
+                </NavLink> {" | "}
+        <NavLink activeStyle={activeStyle} to= "/portfolio">
+        Portfolio 
+        </NavLink > 
 
 </nav>
     );

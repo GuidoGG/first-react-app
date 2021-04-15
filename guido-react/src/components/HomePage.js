@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import {Link} from "react-router-dom";
 import styled  from "styled-components";
 import './guido.css';
@@ -43,7 +43,7 @@ function HomePage() {
         Hallo rode tekst
       </h1>
       <p>
-        Hier komt een paragraaf aan text
+        Hier komt een paragraaf aan text.
       </p>
       <img src={logo} alt="guido"/>
       <img src={logo} alt="guido"/>

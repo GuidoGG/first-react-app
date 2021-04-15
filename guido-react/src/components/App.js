@@ -6,6 +6,7 @@ import CoursesPage from "./CoursesPage";
 import {Route, Switch, Redirect} from "react-router-dom";
 import NotFoundPage from "./NotFoundPage";
 import ManageCoursePage from "./ManageCoursePage";
+import Portfolio from "./Portfolio";
 import {ToastContainer} from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import './guido.css';
@@ -23,6 +24,7 @@ function App() {
       <Route path="/about" component={AboutPage}/>
       <Route path= "/course/:slug" component={ManageCoursePage}/>
       <Route path= "/course" component={ManageCoursePage}/>
+      <Route path= "/portfolio" component={Portfolio}/>
       <Redirect from="/about-page" to="/about"/>
       <Route component={NotFoundPage}></Route>
       </Switch>
