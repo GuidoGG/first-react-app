@@ -42,6 +42,9 @@ function HomePage() {
      <InputElement className="es-guido"/>
         Hallo rode tekst
       </h1>
+      <p>
+        Hier komt een paragraaf aan text
+      </p>
       <img src={logo} alt="guido"/>
       <img src={logo} alt="guido"/>
       <img src={logo} alt="guido"/>
