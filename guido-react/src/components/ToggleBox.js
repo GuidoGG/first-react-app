@@ -22,14 +22,14 @@ class ToggleBox extends React.Component {
 		const { opened } = this.state;
 
 		if (opened){
-			title ='Hide Vehicles';
+			title ='Hide Picture';
 		}else{
-			title ='Show Vehicles';
+			title ='Show Picture';
 		}
 
 		return (
 			<div className="box">
-				<div className="boxTitle" onClick={this.toggleBox}>
+				<div className="boxTitle" style={{color:"white", background:"gray", maxWidth:100 }} onClick={this.toggleBox}>
 					{title}
 				</div>
 				{opened && (					

@@ -8,11 +8,6 @@ import ToggleBox from "./ToggleBox";
 function Portfolio(){
     return (
         <div>
-            <ToggleBox title="Show Vehicles">
-				<ShowPicture>
-                <img className="photo" src={Logo} alt="Logo"></img>
-                </ShowPicture>
-			</ToggleBox>
         <div>
         <h1>
             Dit is mijn portfolio.
@@ -22,6 +17,13 @@ function Portfolio(){
         </p>
         <br>
         </br>
+        <div>
+        <ToggleBox title="Show Vehicles">
+				<ShowPicture>
+                <img className="photo" src={Logo} alt="Logo"></img>
+                </ShowPicture>
+			</ToggleBox>
+        </div>
         <p>
             Hoe ziet dit eruit?
         </p>
