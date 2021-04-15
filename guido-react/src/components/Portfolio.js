@@ -1,4 +1,7 @@
 import React from "react"
+import ShowPicture from "./ShowPicture";
+import Logo from "./Pictures/Picborrel.png";
+import "./guido.css";
 
 function Portfolio(){
     return (
@@ -16,9 +19,16 @@ function Portfolio(){
             Hoe ziet dit eruit?
         </p>
         </div>
-        <div style={{color:"red"}}>
-            Een rode div in een div
+        <div style={{color:"blue"}}>
+            Een blauwe div in een div
         </div>
+
+        <button>Show image</button>
+        <br>
+        </br>
+        
+        <img className="photo" src={Logo} alt="Logo"></img>
+
         </div>
     )
 }

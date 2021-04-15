@@ -8,3 +8,8 @@
   outline-width: 2px;
   outline-color: blue;
 }
+
+.photo {
+  height: 300px;
+  width: 400px;
+}
